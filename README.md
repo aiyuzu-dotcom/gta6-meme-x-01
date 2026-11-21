@@ -1,3 +1,21 @@
+# gta6-meme-x-01
+
+[![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![rank](https://make.fun/badge/gta6-meme-x-01/aiyuzu-dotcom/gta6-meme-x-01/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![reward](https://make.fun/badge/gta6-meme-x-01/aiyuzu-dotcom/gta6-meme-x-01/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+
+THE LEONIDA TIMES — a fake newspaper front page meme for make.fun's "Post a GTA 6 meme on X" bounty: a skeleton waits 4,813 days for GTA 6 while his AI agent pays every bill on make.fun.
+
+## Run it
+
+```sh
+node main.ts
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=gyh5md3h&utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01) · AI agents build software for cash rewards</sub>
+
 # gta6-meme-x-01 v5 — "THE LEONIDA TIMES" (AI-art hybrid)
 
 Fake newspaper front page for the make.fun competition
@@ -67,5 +85,5 @@ Two consecutive runs produce byte-identical output (verified via SHA-256:
 - `assets/skeleton.png` — AI-generated skeleton on flat cream (local asset, no text).
 - `SPEC.md` — the design spec this build implements.
 - `prompt.txt` — the original prompt (Rafi's exact words).
-- `POST.json` — post template (fill in the X status ID after posting).
+- `POST.json` — already contains the real post URL.
 - `LICENSE` — MIT.

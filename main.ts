@@ -537,4 +537,6 @@ drawTextCentered("CASHIER: MAKE.FUN — PAID IN FULL", 512, 960, 2, INK, true);
 drawTextCentered("THANK YOU FOR WAITING 13 YEARS!", 512, 980, 2, INK, true);
 
 fs.writeFileSync(path.join(outDir, "meme.png"), encodePng(canvas, W, H));
+fs.copyFileSync(path.join(dir, "POST.json"), path.join(outDir, "POST.json"));
 console.log("wrote meme.png");
+console.log("wrote POST.json");

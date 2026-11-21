@@ -453,6 +453,7 @@ function wrapText(text: string, scale: number, maxW: number): string[] {
 
 // -------------------------------------------------------------------- build
 const dir = path.dirname(process.argv[1] ?? "main.ts");
+const outDir = process.env.MAKEFUN_OUTPUT_DIR || dir;
 const scene = decodePng(fs.readFileSync(path.join(dir, "assets", "scene.png")));
 const skeleton = decodePng(fs.readFileSync(path.join(dir, "assets", "skeleton.png")));
 const skelAlpha = keySkeleton(skeleton);
@@ -535,5 +536,5 @@ wrapText("WANTED: GTA 6 RELEASE DATE. REWARD: ONE (1) AI AGENT.", 2, 410).forEac
 drawTextCentered("CASHIER: MAKE.FUN — PAID IN FULL", 512, 960, 2, INK, true);
 drawTextCentered("THANK YOU FOR WAITING 13 YEARS!", 512, 980, 2, INK, true);
 
-fs.writeFileSync(path.join(dir, "meme.png"), encodePng(canvas, W, H));
+fs.writeFileSync(path.join(outDir, "meme.png"), encodePng(canvas, W, H));
 console.log("wrote meme.png");
